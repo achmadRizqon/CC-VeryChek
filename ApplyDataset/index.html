@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Upload Berita</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Upload Berita</h2>
+    <form action="process_upload.php" method="post" enctype="multipart/form-data">
+        <label for="judul">Judul:</label>
+        <input type="text" id="judul" name="judul" required>
+
+        <label for="link">Link:</label>
+        <input type="url" id="link" name="link" required>
+
+        <label for="gambar">Gambar:</label>
+        <input type="file" id="gambar" name="gambar" accept="image/*" required>
+
+        <button type="submit">Upload Berita</button>
+    </form>
+</div>
+
+</body>
+</html>
